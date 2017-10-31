@@ -5,12 +5,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\degree}{\ensuremath{ ^\circ }}
-\newcommand{\Diag}[1]{\ensuremath{ \mathsf{Diag} \! \left\{ #1 \right\} }}
-\newcommand{\diag}[1]{\ensuremath{ \mathsf{diag} \! \left\{ #1 \right\} }}
-\newcommand{\trace}[1]{\ensuremath{ \mathsf{Tr} \! \left\{ #1 \right\} }}
-\newcommand{\hypo}[2]{\ensuremath{ \overset{ #2 }{\underset{ #1 }{\gtreqless}} }}
-\newcommand{\expval}[1]{\ensuremath{ \mathsf{E} \! \left[ #1 \right] }} 
-\newcommand{\prob}[1]{\ensuremath{ \mathsf{Pr} \! \left[ #1 \right] }}
+
+\newcommand{\Diag}  [1]{\ensuremath{ \textrm{Diag} \left( #1 \right) }}
+\newcommand{\diag}  [1]{\ensuremath{ \textrm{diag} \left( #1 \right) }}
+\newcommand{\trace} [1]{\ensuremath{ \textrm{Tr}   \left( #1 \right) }}
+\newcommand{\supp}  [1]{\ensuremath{ \textrm{supp} \left( #1 \right) }}
+\newcommand{\expval}[1]{\ensuremath{ \mathsf{E}    \left[ #1 \right] }} 
+\newcommand{\prob}  [1]{\ensuremath{ \textrm{Pr}   \left[ #1 \right] }}
+
+\newcommand{\norm}  [2]{\ensuremath{ \lVert #1 \rVert_{#2} }}
+\newcommand{\hypo}  [2]{\ensuremath{ \overset{ #2 }{\underset{ #1 }{\gtreqless}} }}
 
 \newcommand{\zerobf}{\mathbf{0}}
 
@@ -95,6 +99,114 @@
 \newcommand{\Xrm}{\mathrm{X}}
 \newcommand{\Yrm}{\mathrm{Y}}
 \newcommand{\Zrm}{\mathrm{Z}}
+
+% Calligraphic
+\newcommand{\acal}{\mathcal{a}}
+\newcommand{\bcal}{\mathcal{b}}
+\newcommand{\ccal}{\mathcal{c}}
+\newcommand{\dcal}{\mathcal{d}}
+\newcommand{\ecal}{\mathcal{e}}
+\newcommand{\fcal}{\mathcal{f}}
+\newcommand{\gcal}{\mathcal{g}}
+\newcommand{\hcal}{\mathcal{h}}
+\newcommand{\ical}{\mathcal{i}}
+\newcommand{\jcal}{\mathcal{j}}
+\newcommand{\kcal}{\mathcal{k}}
+\newcommand{\lcal}{\mathcal{l}}
+\newcommand{\mcal}{\mathcal{m}}
+\newcommand{\ncal}{\mathcal{n}}
+\newcommand{\ocal}{\mathcal{o}}
+\newcommand{\pcal}{\mathcal{p}}
+\newcommand{\qcal}{\mathcal{q}}
+\newcommand{\rcal}{\mathcal{r}}
+\newcommand{\scal}{\mathcal{s}}
+\newcommand{\tcal}{\mathcal{t}}
+\newcommand{\ucal}{\mathcal{u}}
+\newcommand{\vcal}{\mathcal{v}}
+\newcommand{\wcal}{\mathcal{w}}
+\newcommand{\xcal}{\mathcal{x}}
+\newcommand{\ycal}{\mathcal{y}}
+\newcommand{\zcal}{\mathcal{z}}
+\newcommand{\Acal}{\mathcal{A}}
+\newcommand{\Bcal}{\mathcal{B}}
+\newcommand{\Ccal}{\mathcal{C}}
+\newcommand{\Dcal}{\mathcal{D}}
+\newcommand{\Ecal}{\mathcal{E}}
+\newcommand{\Fcal}{\mathcal{F}}
+\newcommand{\Gcal}{\mathcal{G}}
+\newcommand{\Hcal}{\mathcal{H}}
+\newcommand{\Ical}{\mathcal{I}}
+\newcommand{\Jcal}{\mathcal{J}}
+\newcommand{\Kcal}{\mathcal{K}}
+\newcommand{\Lcal}{\mathcal{L}}
+\newcommand{\Mcal}{\mathcal{M}}
+\newcommand{\Ncal}{\mathcal{N}}
+\newcommand{\Ocal}{\mathcal{O}}
+\newcommand{\Pcal}{\mathcal{P}}
+\newcommand{\Qcal}{\mathcal{Q}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\Scal}{\mathcal{S}}
+\newcommand{\Tcal}{\mathcal{T}}
+\newcommand{\Ucal}{\mathcal{U}}
+\newcommand{\Vcal}{\mathcal{V}}
+\newcommand{\Wcal}{\mathcal{W}}
+\newcommand{\Xcal}{\mathcal{X}}
+\newcommand{\Ycal}{\mathcal{Y}}
+\newcommand{\Zcal}{\mathcal{Z}}
+
+% Operators
+\newcommand{\asf}{\mathsf{a}}
+\newcommand{\bsf}{\mathsf{b}}
+\newcommand{\csf}{\mathsf{c}}
+\newcommand{\dsf}{\mathsf{d}}
+\newcommand{\esf}{\mathsf{e}}
+\newcommand{\fsf}{\mathsf{f}}
+\newcommand{\gsf}{\mathsf{g}}
+\newcommand{\hsf}{\mathsf{h}}
+\newcommand{\isf}{\mathsf{i}}
+\newcommand{\jsf}{\mathsf{j}}
+\newcommand{\ksf}{\mathsf{k}}
+\newcommand{\lsf}{\mathsf{l}}
+\newcommand{\msf}{\mathsf{m}}
+\newcommand{\nsf}{\mathsf{n}}
+\newcommand{\osf}{\mathsf{o}}
+\newcommand{\psf}{\mathsf{p}}
+\newcommand{\qsf}{\mathsf{q}}
+\newcommand{\rsf}{\mathsf{r}}
+\newcommand{\ssf}{\mathsf{s}}
+\newcommand{\tsf}{\mathsf{t}}
+\newcommand{\usf}{\mathsf{u}}
+\newcommand{\vsf}{\mathsf{v}}
+\newcommand{\wsf}{\mathsf{w}}
+\newcommand{\xsf}{\mathsf{x}}
+\newcommand{\ysf}{\mathsf{y}}
+\newcommand{\zsf}{\mathsf{z}}
+\newcommand{\Asf}{\mathsf{A}}
+\newcommand{\Bsf}{\mathsf{B}}
+\newcommand{\Csf}{\mathsf{C}}
+\newcommand{\Dsf}{\mathsf{D}}
+\newcommand{\Esf}{\mathsf{E}}
+\newcommand{\Fsf}{\mathsf{F}}
+\newcommand{\Gsf}{\mathsf{G}}
+\newcommand{\Hsf}{\mathsf{H}}
+\newcommand{\Isf}{\mathsf{I}}
+\newcommand{\Jsf}{\mathsf{J}}
+\newcommand{\Ksf}{\mathsf{K}}
+\newcommand{\Lsf}{\mathsf{L}}
+\newcommand{\Msf}{\mathsf{M}}
+\newcommand{\Nsf}{\mathsf{N}}
+\newcommand{\Osf}{\mathsf{O}}
+\newcommand{\Psf}{\mathsf{P}}
+\newcommand{\Qsf}{\mathsf{Q}}
+\newcommand{\Rsf}{\mathsf{R}}
+\newcommand{\Ssf}{\mathsf{S}}
+\newcommand{\Tsf}{\mathsf{T}}
+\newcommand{\Usf}{\mathsf{U}}
+\newcommand{\Vsf}{\mathsf{V}}
+\newcommand{\Wsf}{\mathsf{W}}
+\newcommand{\Xsf}{\mathsf{X}}
+\newcommand{\Ysf}{\mathsf{Y}}
+\newcommand{\Zsf}{\mathsf{Z}}
 
 % Vectors
 \newcommand{\abf}{\mathbf{a}}
