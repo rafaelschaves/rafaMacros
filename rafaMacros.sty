@@ -38,14 +38,16 @@
 \DeclareMathOperator*{\argmin}{\textrm{argmin}}
 \DeclareMathOperator*{\argmax}{\textrm{argmax}}
 
-\newcounter{optimization}[chapter]
-\newenvironment{optimization}{\refstepcounter{optimization}\equation}{\tag{P-\thechapter.\theoptimization}\endequation}
+\DeclareMathOperator*{\cn}{\mathcal{C}\mathcal{N}}
 
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-
-\theoremstyle{remark}
-\newtheorem{remark}{Remark}[chapter]
+%\newcounter{optimization}[chapter]
+%\newenvironment{optimization}{\refstepcounter{optimization}\equation}{\tag{P-\thechapter.\theoptimization}\endequation}
+%
+%\theoremstyle{definition}
+%\newtheorem{definition}{Definition}[chapter]
+%
+%\theoremstyle{remark}
+%\newtheorem{remark}{Remark}[chapter]
 
 % Most Common Sets
 
@@ -363,7 +365,7 @@
 \newcommand{\taubf}{\boldsymbol{\tau}}
 \newcommand{\upsilonbf}{\boldsymbol{\upsilon}}
 \newcommand{\phibf}{\boldsymbol{\phi}}
-\newcommand{\varPhibf}{\boldsymbol{\varPhi}}
+\newcommand{\varphibf}{\boldsymbol{\varphi}}
 \newcommand{\chibf}{\boldsymbol{\chi}}
 \newcommand{\psibf}{\boldsymbol{\psi}}
 \newcommand{\omegabf}{\boldsymbol{\omega}}
@@ -393,26 +395,26 @@
 
 % HAT - Those are the letters with the hat symbol.
 
-\newcommand{\ah}{\hat{a}}
-\newcommand{\bh}{\hat{b}}
-\newcommand{\ch}{\hat{c}}
-\newcommand{\dh}{\hat{d}}
-\newcommand{\eh}{\hat{e}}
-\newcommand{\fh}{\hat{f}}
-\newcommand{\gh}{\hat{g}}
-\newcommand{\hh}{\hat{h}}
-\newcommand{\ih}{\hat{i}}
-\newcommand{\jh}{\hat{j}}
-\newcommand{\kh}{\hat{k}}
-\newcommand{\lh}{\hat{l}}
-\newcommand{\mh}{\hat{m}}
-\newcommand{\nh}{\hat{n}}
+\newcommand{\ahat}{\hat{a}}
+\newcommand{\bhat}{\hat{b}}
+\newcommand{\chat}{\hat{c}}
+\newcommand{\dhat}{\hat{d}}
+\newcommand{\ehat}{\hat{e}}
+\newcommand{\fhat}{\hat{f}}
+\newcommand{\ghat}{\hat{g}}
+\newcommand{\hhat}{\hat{h}}
+\newcommand{\ihat}{\hat{i}}
+\newcommand{\jhat}{\hat{j}}
+\newcommand{\khat}{\hat{k}}
+\newcommand{\lhat}{\hat{l}}
+\newcommand{\mhat}{\hat{m}}
+\newcommand{\nhat}{\hat{n}}
 \newcommand{\oh}{\hat{o}}
 \newcommand{\ph}{\hat{p}}
 \newcommand{\qh}{\hat{q}}
 \newcommand{\rh}{\hat{r}}
 \newcommand{\sh}{\hat{s}}
-\newcommand{\th}{\hat{t}}
+\newcommand{\that}{\hat{t}}
 \newcommand{\uh}{\hat{u}}
 \newcommand{\vh}{\hat{v}}
 \newcommand{\wh}{\hat{w}}
@@ -473,7 +475,7 @@
 \newcommand{\tauh}       {\hat{\tau}}
 \newcommand{\upsilonh}   {\hat{\upsilon}}
 \newcommand{\phih}       {\hat{\phi}}
-\newcommand{\varPhih}    {\hat{\varPhi}}
+\newcommand{\varphih}    {\hat{\varphi}}
 \newcommand{\chih}       {\hat{\chi}}
 \newcommand{\psih}       {\hat{\psi}}
 \newcommand{\omegah}     {\hat{\omega}}
@@ -635,7 +637,7 @@
 \newcommand{\taubfh}       {\hat{\boldsymbol{\tau}}}
 \newcommand{\upsilonbfh}   {\hat{\boldsymbol{\upsilon}}}
 \newcommand{\phibfh}       {\hat{\boldsymbol{\phi}}}
-\newcommand{\varPhibfh}    {\hat{\boldsymbol{\varPhi}}}
+\newcommand{\varphibfh}    {\hat{\boldsymbol{\varphi}}}
 \newcommand{\chibfh}       {\hat{\boldsymbol{\chi}}}
 \newcommand{\psibfh}       {\hat{\boldsymbol{\psi}}}
 \newcommand{\omegabfh}     {\hat{\boldsymbol{\omega}}}
@@ -672,8 +674,8 @@
 \newcommand{\et}{\tilde{e}}
 \newcommand{\ft}{\tilde{f}}
 \newcommand{\gt}{\tilde{g}}
-\newcommand{\ht}{\tilde{h}}
-\newcommand{\it}{\tilde{i}}
+\newcommand{\htil}{\tilde{h}}
+\newcommand{\itil}{\tilde{i}}
 \newcommand{\jt}{\tilde{j}}
 \newcommand{\kt}{\tilde{k}}
 \newcommand{\lt}{\tilde{l}}
@@ -684,7 +686,7 @@
 \newcommand{\qt}{\tilde{q}}
 \newcommand{\rt}{\tilde{r}}
 \newcommand{\st}{\tilde{s}}
-\newcommand{\tt}{\tilde{t}}
+\newcommand{\ttil}{\tilde{t}}
 \newcommand{\ut}{\tilde{u}}
 \newcommand{\vt}{\tilde{v}}
 \newcommand{\wt}{\tilde{w}}
@@ -745,7 +747,7 @@
 \newcommand{\taut}       {\tilde{\tau}}
 \newcommand{\upsilont}   {\tilde{\upsilon}}
 \newcommand{\phit}       {\tilde{\phi}}
-\newcommand{\varPhit}    {\tilde{\varPhi}}
+\newcommand{\varphit}    {\tilde{\varphi}}
 \newcommand{\chit}       {\tilde{\chi}}
 \newcommand{\psit}       {\tilde{\psi}}
 \newcommand{\omegat}     {\tilde{\omega}}
@@ -907,7 +909,7 @@
 \newcommand{\taubft}       {\hat{\boldsymbol{\tau}}}
 \newcommand{\upsilonbft}   {\hat{\boldsymbol{\upsilon}}}
 \newcommand{\phibft}       {\hat{\boldsymbol{\phi}}}
-\newcommand{\varPhibft}    {\hat{\boldsymbol{\varPhi}}}
+\newcommand{\varphibft}    {\hat{\boldsymbol{\varphi}}}
 \newcommand{\chibft}       {\hat{\boldsymbol{\chi}}}
 \newcommand{\psibft}       {\hat{\boldsymbol{\psi}}}
 \newcommand{\omegabft}     {\hat{\boldsymbol{\omega}}}
